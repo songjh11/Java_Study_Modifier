@@ -9,6 +9,10 @@ public abstract class Unit {
 	private String color;
 	private String name;
 	
+	public Unit() {
+		
+	}
+	
 	public Unit(int hp) {
 		System.out.println("Super 생성자");
 		this.hp=hp;
@@ -16,6 +20,8 @@ public abstract class Unit {
 	
 	//move 
 	public abstract void move();//->완성되지 않은 메서드
+	
+	
 	
 	public void info() {
 		System.out.println("Super Info");

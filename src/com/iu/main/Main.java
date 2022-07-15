@@ -31,12 +31,12 @@ public class Main {
 		Hydra h1 = new Hydra();
 		h1.setHp(20);
 		h1.setColor("Black");
-		
+		h1.attack();
 		h1.move();
 		
 		m1.info();
 		m1.move();
-		
+		m1.attack();
 		
 		
 		
