@@ -5,6 +5,9 @@ public class Iu {
 	private String name;//->객체 생성 후 사용 가능, 객체가 만들어질수도 아닐수도 있기 때문에 사용이 어렵다 
 	private int age;
 	
+	//fix study
+	private String test;
+	
 	private Iu () {//->생성자 생성,
 		
 	}
