@@ -1,31 +1,28 @@
 package com.iu.main;
 
-import com.iu.animal.Cat;
-import com.iu.animal.Human;
-import com.iu.animal.Zoo;
+import com.iu.terran.Marine;
+import com.iu.zerg.Hydra;
 
 public class Main {
 
 	public static void main(String[] args) {
-//		Cat cat = new Cat();
 		
-//		cat.sound();
+		Marine m1 = new Marine();
+		m1.setHp(30);
+		m1.setWeapon(null);
 		
-		//cat.age = 5;
+		Hydra h1 = new Hydra();
+		h1.setHp(20);
+		h1.setColor("Black");
 		
-		Human human = new Human();
+		h1.move();
 		
-//		human.age=500;
-		human.setAge(100);
-		human.info();//메서드를 통해서 접근
-		human.getAge();
-		//-----------------------------------------------
-		System.out.println(Zoo.title);
-		Zoo.info();
+		m1.info();
+		m1.move();
 		
-		Zoo zoo = new Zoo();
-//		zoo.price=10000;<-final은 변경이 안되고 에러남
-
+		
+		
+		
 	}
 
 }
