@@ -1,6 +1,6 @@
 package com.iu.util;
 
-import java.util.Random;
+import java.util.Scanner;
 
 public class CollectionStack implements Collection {
 
@@ -8,7 +8,7 @@ public class CollectionStack implements Collection {
 	
 	 int [] numbers2 = null;
 	
-	Random random = new Random();
+	Scanner sc = new Scanner (System.in);
 		
 	public int[] getNumbers() {
 		return numbers;
@@ -27,18 +27,22 @@ public class CollectionStack implements Collection {
 	}
 
 	public int[] add(int[] numbers) {
-		int num = random.nextInt();
 		numbers2 = new int [numbers.length+1];
-		int j=0;
-		for(int i=1; i<numbers.length; i++) {
-			numbers2[i] = numbers[j];
+		for(int i=0; i<numbers.length; i++) {
+			numbers2[i+1] = numbers[i];
 		}
-		numbers2[0]=num;
+		System.out.println("숫자 입력"); 
+		numbers2[0]=sc.nextInt();
 		numbers=numbers2;
 		return numbers;
 			}
 	
 	public int[] remove(int[] numbers) {
+		numbers2 = new int [numbers.length-1];
+		for(int i=0; i<numbers.length-1; i++) {
+			numbers2[i] = numbers[i+1];
+		}
+			numbers=numbers2;
 			return numbers;
 	}
 	

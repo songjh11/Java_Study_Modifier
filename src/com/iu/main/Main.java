@@ -18,12 +18,26 @@ public class Main {
 		
 	 CollectionStack cs1 = new CollectionStack(); 
 	 
-	 int [] numbers = null;
-	 
-	 cs1.add(numbers);
-		for(int i=0; i<cs1.getNumbers().length; i++) {
-			System.out.println(cs1.getNumbers()[i]);
+	int [] nums = {1,2,3};
+	int [] numbers = cs1.add(nums);
+		for(int i=0; i<numbers.length; i++) {
+			System.out.println(numbers[i]);
 				}
+		System.out.println("====================================");
+	int [] numbers2 = cs1.remove(nums);
+			for(int i=0; i<numbers2.length; i++) {
+				System.out.println(numbers2[i]);
+					}
+		System.out.println("====================================");			
+		 nums = cs1.add(nums);
+			for(int i=0; i<nums.length; i++) {
+				System.out.println(nums[i]);
+					}
+		System.out.println("====================================");
+		 nums = cs1.remove(nums);
+			for(int i=0; i<nums.length; i++) {
+				System.out.println(nums[i]);
+					}
 		
 	}
 
