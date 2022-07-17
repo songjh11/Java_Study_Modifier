@@ -10,21 +10,21 @@ public class CollectionStack implements Collection {
 	
 	Scanner sc = new Scanner (System.in);
 		
-	public int[] getNumbers() {
-		return numbers;
-	}
-
-	public void setNumbers(int[] numbers) {
-		this.numbers = numbers;
-	}
-
-	public int[] getNumbers2() {
-		return numbers2;
-	}
-
-	public void setNumbers2(int[] numbers2) {
-		this.numbers2 = numbers2;
-	}
+//	public int[] getNumbers() {
+//		return numbers;
+//	}
+//
+//	public void setNumbers(int[] numbers) {
+//		this.numbers = numbers;
+//	}
+//
+//	public int[] getNumbers2() {
+//		return numbers2;
+//	}
+//
+//	public void setNumbers2(int[] numbers2) {
+//		this.numbers2 = numbers2;
+//	}
 
 	public int[] add(int[] numbers) {
 		numbers2 = new int [numbers.length+1];

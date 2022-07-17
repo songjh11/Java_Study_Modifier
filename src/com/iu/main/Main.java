@@ -1,5 +1,7 @@
 package com.iu.main;
 
+import com.iu.util.CollectionQue;
+import com.iu.util.CollectionSet;
 import com.iu.util.CollectionStack;
 
 public class Main {
@@ -17,28 +19,57 @@ public class Main {
 			//remove - 삭제할 숫자를 입력 받아서 일치하는 숫자 삭제
 		
 	 CollectionStack cs1 = new CollectionStack(); 
-	 
+	 CollectionQue cq2 = new CollectionQue();
+	 CollectionSet cs3 = new CollectionSet();
+	 	 
 	int [] nums = {1,2,3};
-	int [] numbers = cs1.add(nums);
-		for(int i=0; i<numbers.length; i++) {
-			System.out.println(numbers[i]);
+	
+		System.out.println("====================================");
+//	int [] numbers = cs1.add(nums);
+//		for(int i=0; i<numbers.length; i++) {
+//			System.out.println(numbers[i]);
+//				}
+//		System.out.println("====================================");
+//	int [] numbers2 = cs1.remove(nums);
+//			for(int i=0; i<numbers2.length; i++) {
+//				System.out.println(numbers2[i]);
+//					}
+//		System.out.println("====================================");			
+//		 nums = cs1.add(nums);
+//			for(int i=0; i<nums.length; i++) {
+//				System.out.println(nums[i]);
+//					}
+//		System.out.println("====================================");
+//		 nums = cs1.remove(nums);
+//			for(int i=0; i<nums.length; i++) {
+//				System.out.println(nums[i]);
+//					}
+//		System.out.println("====================================");
+	
+		int [] numbers3 = cq2.add(nums);
+		for(int i=0; i<numbers3.length; i++) {
+			System.out.println(numbers3[i]);
 				}
-		System.out.println("====================================");
-	int [] numbers2 = cs1.remove(nums);
-			for(int i=0; i<numbers2.length; i++) {
-				System.out.println(numbers2[i]);
-					}
-		System.out.println("====================================");			
-		 nums = cs1.add(nums);
-			for(int i=0; i<nums.length; i++) {
-				System.out.println(nums[i]);
-					}
-		System.out.println("====================================");
-		 nums = cs1.remove(nums);
-			for(int i=0; i<nums.length; i++) {
-				System.out.println(nums[i]);
-					}
 		
+		System.out.println("====================================");
+		
+		int [] numbers4 = cq2.remove(nums);
+		for(int i=0; i<numbers4.length; i++) {
+			System.out.println(numbers4[i]);
+				}
+		
+		System.out.println("====================================");
+		
+		int [] numbers5 = cs3.add(nums);
+		for(int i=0; i<numbers5.length; i++) {
+			System.out.println(numbers5[i]);
+				}
+		
+		System.out.println("====================================");
+	
+	
+	
+	
 	}
 
 	
