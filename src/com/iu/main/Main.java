@@ -23,6 +23,10 @@ public class Main {
 	 CollectionSet cs3 = new CollectionSet();
 	 	 
 	int [] nums = {1,2,3};
+	String name = "test";
+	char ch = name.charAt(3);
+	System.out.println(ch);
+	
 	
 		System.out.println("====================================");
 //	int [] numbers = cs1.add(nums);
